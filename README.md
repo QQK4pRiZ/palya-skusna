@@ -44,8 +44,8 @@
 ## 🚀 Запуск локально
 
 ```bash
-git clone https://github.com/USERNAME/palya-vkusna.git
-cd palya-vkusna
+git clone https://github.com/QQK4pRiZ/palya-skusna.git
+cd palya-skusna
 npm install
 npm run dev
 ```
