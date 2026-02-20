@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+﻿# ПаляВкусна — Premium Restaurant Website
 
-## Getting Started
+> Сучасний концептуальний сайт ресторану з акцентом на емоцію, мінімалізм та плавні анімації.
+> Натхнення: Alinea (Chicago) — editorial, ultra-minimal, high-end.
 
-First, run the development server:
+---
+
+## 🔗 Live Demo
+
+**[palyavkusna.vercel.app](https://palyavkusna.vercel.app)**
+
+---
+
+## ✨ Особливості
+
+- **Preloader** з анімованим логотипом
+- **Custom cursor** — слідує за мишею з lag-ефектом
+- **GSAP ScrollTrigger** — кожна секція оживає при скролі
+- **Lenis smooth scroll** — шовковий скрол без jerks
+- **Hero** з паралакс-оверлеєм та кінематографічною типографікою
+- **Меню** — три вкладки (дегустаційне / à la carte / вина) з модальним вікном деталей
+- **Наш досвід** — 4 scroll-triggered секції з чергуванням фото/текст
+- **Галерея** — masonry-сітка з фільтрами по категоріях і lightbox-переглядачем
+- **Бронювання** — повна форма з мікроінтеракціями та станом успіху
+- **ScrollProgress bar** у верхній частині сторінки
+- **SEO metadata** на кожній сторінці
+
+---
+
+## ⚙️ Технології
+
+| Шар | Технологія |
+|---|---|
+| Framework | Next.js 15 (App Router) |
+| Мова | TypeScript |
+| Стилі | Tailwind CSS + CSS Modules |
+| Анімації | GSAP 3 + ScrollTrigger |
+| Скрол | Lenis |
+| Шрифти | Cormorant Garamond + Inter |
+| Деплой | Vercel |
+
+---
+
+## 🚀 Запуск локально
 
 ```bash
+git clone https://github.com/USERNAME/palya-vkusna.git
+cd palya-vkusna
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Відкрий http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Структура
 
-## Learn More
+```
+src/
+├── app/
+│   ├── page.tsx              # Головна
+│   ├── menu/                 # Меню
+│   ├── experience/           # Наш досвід
+│   ├── gallery/              # Галерея
+│   └── reservations/         # Бронювання
+├── components/
+│   ├── home/                 # Hero, StorySection, SignatureDishes…
+│   ├── Navbar.tsx
+│   ├── Footer.tsx
+│   ├── CustomCursor.tsx
+│   ├── Preloader.tsx
+│   └── SmoothScrollProvider.tsx
+└── data/
+    ├── menu.ts
+    ├── gallery.ts
+    ├── experience.ts
+    └── signatures.ts
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📄 Ліцензія
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT — вільне використання для портфоліо та комерційних проєктів.
